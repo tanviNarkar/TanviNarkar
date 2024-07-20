@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Tanvi Narkar</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--About Me Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated computer engineering student at Vidyalankar Polytechnic, Mumbai, graduating in May 2025. Proficient in C, C++, HTML, CSS, and basic Java, I have hands-on experience from an internship at Hertzsoft Technologies and an industrial hackathon. I excel in delivering high-quality web development projects, such as an E-Commerce website for SVTECHSHANT Pvt. Ltd. With strong communication skills, I effectively explain technical concepts to non-technical stakeholders and thrive in collaborative environments.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Designing instagram post</li>
+                            <li><span>Web Development</span><br>Designing web application</li>
+                            <li><span>AI Developer</span><br>Building generative AI Chatbot</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jun 2024</span><br>Internship, Hertzsoft Technologies Pvt. Ltd.</li>
+                            <li><span>Feb 2024</span><br>2nd Runner Up, Industrial Hackathon</li>
+                            <li><span>Feb 2024</span><br>Industrial Visit, I-MEDITA, Pune</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>May 2025</span><br>Diploma in Computer Engineering</li>
+                            <li><span>Mar 2022</span><br>SSC, IES Modern English School</li>
+                            <li><span>May 2028</span><br>Expected to complete degree</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Achievements-->
+    <div id="achievements">
+        <div class="container">
+            <h1 class="sub-title">Achievements</h1>
+            <div class="achievements-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>2<sup>nd</sup> Runner Up</h2>
+                    <p>Secured 2<sup>nd</sup>Runner Up position in Industrial Hackathon held at Vidyalankar Polytechnic.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-award"></i>
+                    <h2>Merit Award</h2>
+                    <p>Secured Merit Award in Imas Abacus Visual Competition that was held all over Mumbai & Thane District.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects-->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="alpine.jpg">
+                    <div class="layer">
+                        <h3>Alpine Riverhill Website</h3>
+                        <p>Alpine Riverhill's website showcases serene mountain retreats and adventure activities, offering a unique getaway for nature enthusiasts and travelers.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="posts.jpg">
+                    <div class="layer">
+                        <h3>Instagram Posts</h3>
+                        <p>Instagram posts for Hertzsoft technologies Pvt. Ltd which enhances the knowledege of HTML,CSS & posts for a NGO named Parvedan Foundation to spread awareness & importance of all National & International days.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="chatbot.jpg">
+                    <div class="layer">
+                        <h3>Hertzsoft Educare Chatbot</h3>
+                        <p>Hertzsot Educare chatbot is an AI-powered assistant that enhances education by providing instant support and personalized learning resources for students and educators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tanvinarkar071@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 8850139396</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Responsive Portfolio Of Tanvi Narkar.</p>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    //For responsive screen menu 
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx7QTKAWzuvmhY14TzjOd_qPFiXQ6KiQ3y-bMFP7s9zds5in-fAvo8G2FMJRRNa3_Af/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML= "Message sent successfully"
+        setTimeout(function() {
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
